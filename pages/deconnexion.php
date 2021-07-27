@@ -1,0 +1,11 @@
+<?php
+$_SESSION['open']="";
+unset($_SESSION['open']);
+$_SESSION['nom']="";
+unset($_SESSION['nom']);
+$_SESSION['prenom']="";
+unset($_SESSION['prenom']);
+session_destroy();
+$idcon=NULL;
+header("location:?page=authentification");
+?>
